@@ -15,6 +15,7 @@ class MergePurchaseAutomatic(models.TransientModel):
     """
 
     _name = "purchase.merge.automatic.wizard"
+    _description = "Purchase Merge Automatic Wizard"
 
     purchase_ids = fields.Many2many(
         comodel_name="purchase.order",
@@ -163,8 +164,10 @@ class MergePurchaseAutomatic(models.TransientModel):
         :param po_name : the po where the message will be posted
         """
         subject = "Merge purchase order"
-        body = _("This purchase order lines have been merged {} : {}").format(
-            way, " ,".join(po_name)
+        body = _(
+            "This purchase order lines have been merged %(way)s : %(po_names)s",
+            way=way,
+            po_names=" ,".join(po_name),
         )
 
         po.message_post(body=body, subject=subject, content_subtype="plaintext")
