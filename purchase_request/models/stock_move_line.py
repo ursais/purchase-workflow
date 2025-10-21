@@ -42,8 +42,8 @@ class StockMoveLine(models.Model):
 
     @api.model
     def _picking_confirm_done_message_content(self, message_data):
-        title = (
-            _("Receipt confirmation for Request %s") % (message_data["request_name"])
+        title = _("Receipt confirmation for Request %s") % (
+            message_data["request_name"]
         )
         message = "<h3>%s</h3>" % title
         message += _(

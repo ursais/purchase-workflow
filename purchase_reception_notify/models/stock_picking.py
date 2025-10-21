@@ -2,7 +2,6 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/lgpl-3.0).
 
 from markupsafe import Markup, escape
-
 from odoo import _, api, models
 
 
