@@ -2,7 +2,6 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0)
 
 import pytz
-
 from odoo import SUPERUSER_ID
 from odoo.tests import common
 

@@ -3,10 +3,9 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html)
 
 from odoo import fields
+from odoo.addons.base.tests.common import DISABLED_MAIL_CONTEXT
 from odoo.tests import tagged
 from odoo.tests.common import TransactionCase
-
-from odoo.addons.base.tests.common import DISABLED_MAIL_CONTEXT
 
 
 @tagged("post_install", "-at_install")

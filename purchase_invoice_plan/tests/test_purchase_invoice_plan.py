@@ -2,7 +2,6 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
 
 from freezegun import freeze_time
-
 from odoo import fields
 from odoo.exceptions import UserError, ValidationError
 from odoo.tests.common import Form, TransactionCase
