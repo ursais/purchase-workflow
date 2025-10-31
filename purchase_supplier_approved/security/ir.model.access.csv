@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_supplier_approved_user,purchase.supplier.approved.user,model_purchase_supplier_approved,purchase.group_purchase_user,1,0,0,0
+access_purchase_supplier_approved_manager,purchase.supplier.approved.manager,model_purchase_supplier_approved,group_manage_approved_suppliers,1,1,1,1
+access_product_category_user,product.category.user,model_product_category,purchase.group_purchase_user,1,0,0,0
+access_product_category_manager,product.category.manager,model_product_category,group_manage_approved_suppliers,1,1,1,0
