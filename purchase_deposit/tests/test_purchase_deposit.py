@@ -63,6 +63,7 @@ class TestPurchaseDeposit(TransactionCase):
             {
                 "name": "Tax 20",
                 "type_tax_use": "purchase",
+                "amount_type": "percent",
                 "amount": 20,
             }
         )
