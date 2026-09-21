@@ -1,6 +1,6 @@
 id,name,model_id,group_id/id,operation,domain
-access_purchase_container,purchase.container,model_purchase_container,purchase.group_purchase_user,crud,
-access_container_type,container.type,model_container_type,purchase.group_purchase_user,crud,
-access_purchase_container_manager,purchase.container,model_purchase_container,purchase.group_purchase_manager,crud,
-access_purchase_container_readonly,purchase.container,model_purchase_container,account.group_account_readonly,r,
-access_purchase_container_invoice,purchase.container,model_purchase_container,account.group_account_invoice,ru,
+access_purchase_container,purchase.container,purchase.container,purchase.group_purchase_user,crud,
+access_container_type,container.type,container.type,purchase.group_purchase_user,crud,
+access_purchase_container_manager,purchase.container,purchase.container,purchase.group_purchase_manager,crud,
+access_purchase_container_readonly,purchase.container,purchase.container,account.group_account_readonly,r,
+access_purchase_container_invoice,purchase.container,purchase.container,account.group_account_invoice,ru,
