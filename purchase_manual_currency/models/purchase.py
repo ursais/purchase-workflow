@@ -68,7 +68,7 @@ class PurchaseOrder(models.Model):
         """Get label related currency"""
         names = {
             "company_currency_name": (
-                self.env["res.company"].browse(self._context.get("company_id"))
+                self.env["res.company"].browse(self.env.context.get("company_id"))
                 or self.env.company
             ).currency_id.name,
             "rate_currency_name": "Currency",
@@ -116,7 +116,7 @@ class PurchaseOrder(models.Model):
         result = super().get_view(view_id=view_id, view_type=view_type, **options)
         if view_type == "form":
             company_currency_name = (
-                self.env["res.company"].browse(self._context.get("company_id"))
+                self.env["res.company"].browse(self.env.context.get("company_id"))
                 or self.env.company
             ).currency_id.name
             doc = etree.XML(result["arch"])

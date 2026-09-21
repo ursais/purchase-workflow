@@ -3,7 +3,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 {
     "name": "Purchase Cancel Reason",
-    "version": "18.0.1.0.0",
+    "version": "20.0.1.0.0",
     "author": "Camptocamp, Okia SPRL, Odoo Community Association (OCA)",
     "category": "Purchase",
     "license": "AGPL-3",
@@ -11,12 +11,11 @@
     "website": "https://github.com/OCA/purchase-workflow",
     "depends": ["purchase"],
     "data": [
-        "security/ir.model.access.csv",
+        "security/ir.access.csv",
         "wizard/purchase_order_cancel.xml",
         "views/purchase_order.xml",
         "views/purchase_order_cancel_reason.xml",
-        "data/purchase_order_cancel_reason.xml",
-    ],
+        "data/purchase_order_cancel_reason.xml"],
     "auto_install": False,
     "installable": True,
 }

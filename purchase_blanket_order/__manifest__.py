@@ -5,15 +5,14 @@
     "category": "Purchase",
     "license": "AGPL-3",
     "author": "ForgeFlow, Odoo Community Association (OCA)",
-    "version": "18.0.1.0.0",
+    "version": "20.0.1.0.0",
     "website": "https://github.com/OCA/purchase-workflow",
     "summary": "Purchase Blanket Orders",
     "depends": [
         "purchase",
-        "base_view_inheritance_extension",
-    ],
+        "base_view_inheritance_extension"],
     "data": [
-        "security/ir.model.access.csv",
+        "security/ir.access.csv",
         "security/security.xml",
         "data/sequence.xml",
         "data/ir_cron.xml",
@@ -22,7 +21,6 @@
         "views/purchase_blanket_order_views.xml",
         "views/purchase_order_views.xml",
         "report/templates.xml",
-        "report/report.xml",
-    ],
+        "report/report.xml"],
     "installable": True,
 }

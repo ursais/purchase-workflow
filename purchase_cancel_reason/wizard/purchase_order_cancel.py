@@ -17,8 +17,8 @@ class PurchaseOrderCancel(models.TransientModel):
     def confirm_cancel(self):
         self.ensure_one()
         act_close = {"type": "ir.actions.act_window_close"}
-        purchase_ids = self._context.get("active_ids")
-        active_model = self._context.get("active_model")
+        purchase_ids = self.env.context.get("active_ids")
+        active_model = self.env.context.get("active_model")
         if purchase_ids is None or active_model != "purchase.order":
             return act_close
         purchase = (

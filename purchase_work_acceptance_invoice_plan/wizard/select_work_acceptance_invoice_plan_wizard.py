@@ -214,13 +214,10 @@ class ComputeWorkAcceptanceInvoicePlan(models.TransientModel):
         compute="_compute_amount",
         inverse="_inverse_amount",
     )
-    _sql_constraints = [
-        (
-            "order_line_unique",
-            "unique(wizard_id, order_line_id)",
-            "You are selecting same product line more than one.",
-        )
-    ]
+    _order_line_unique = models.Constraint(
+        'unique(wizard_id, order_line_id)',
+        "You are selecting same product line more than one.",
+    )
 
     @api.depends("quantity")
     def _compute_amount(self):

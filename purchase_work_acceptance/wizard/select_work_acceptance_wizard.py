@@ -41,7 +41,7 @@ class SelectWorkAcceptanceWizard(models.TransientModel):
 
     def button_create_vendor_bill(self):
         self.ensure_one()
-        order_id = self._context.get("active_id")
+        order_id = self.env.context.get("active_id")
         wa = self.env["work.acceptance"]._get_valid_wa("invoice", order_id)
         if self.wa_id not in wa:
             raise ValidationError(

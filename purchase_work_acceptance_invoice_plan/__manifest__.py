@@ -3,19 +3,18 @@
 
 {
     "name": "Purchase Work Acceptance Invoice Plan",
-    "version": "18.0.1.0.0",
+    "version": "20.0.1.0.0",
     "category": "Purchase Management",
     "author": "Ecosoft, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "website": "https://github.com/OCA/purchase-workflow",
     "depends": ["purchase_work_acceptance", "purchase_invoice_plan"],
     "data": [
-        "security/ir.model.access.csv",
+        "security/ir.access.csv",
         "data/server_action.xml",
         "wizard/select_work_acceptance_invoice_plan_wizard_views.xml",
         "views/purchase_views.xml",
-        "views/work_acceptance_view.xml",
-    ],
+        "views/work_acceptance_view.xml"],
     "maintainers": ["kittiu", "Saran440"],
     "installable": True,
     "auto_install": True,
